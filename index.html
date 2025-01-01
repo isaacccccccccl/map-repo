@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body onload="onInit()">
+    <section class="header">
+        <header>Find your way to your best place</header>
+    </section>
+    <nav class="nav-bar">
+        <ul>
+            <h3>Navigation Bar</h3>
+            <li><a href="user-perfs.html">User settings</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+    </nav>
+
+    <section class="user-info">User info
+        <div >Date of Birth: <span class="date"></span></div>
+        <div  class="time">Time of Birth: <span></span></div>
+    </section>
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/userService.js"></script>
+    <script src="js/map-service.js"></script>
+    <script src="js/map-controller.js"></script>
+    <script src="js/user-controller.js"></script>
+    <script src="js/index-controller.js"></script>
+</body>
+
+</html>
