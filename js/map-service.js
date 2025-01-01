@@ -71,12 +71,18 @@ function _createPlaces() {
 
 function initMap() {
     const location = { lat: -34.397, lng: 150.644 };
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 8,
-      center: location,
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: location,
     });
+
     const marker = new google.maps.Marker({
-      position: location,
-      map: map,
+        position: location,
+        map: map,
     });
-  }
+}
+
+// Ensure the map initializes after the page has fully loaded
+window.onload = function () {
+    initMap();
+};
