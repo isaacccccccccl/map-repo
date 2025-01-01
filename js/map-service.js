@@ -44,9 +44,9 @@ function _createPlaces() {
     if (!places || !places.length) {
         places = [{
             id: '1p' + gIdx++,
-            lat: 32.1416,
-            lng: 34.831213,
-            name: 'Pukis house',
+            lat: 29.550360,
+            lng: 34.952278,
+            name: 'Eilat',
             zoom: 4
         },
         
@@ -70,7 +70,7 @@ function _createPlaces() {
 }
 
 function initMap() {
-    const location = { lat: -34.397, lng: 150.644 };
+    const location = { lat: 29.550360, lng: 34.952278 };
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 8,
         center: location,
